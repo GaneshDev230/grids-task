@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(14, 14, 214);
+            margin-top: 80px;
+            height: 100vh;
+        }
+        .canh{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .can {
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(4, 200px);
+            gap: 20px;
+           
+        }
+        
+.b1{
+    height: 220px;
+   width: 200px;
+   background-color:white;
+   grid-row-start:1 ;
+   grid-row-end:3 ;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.b2{
+    height: 100px;
+   width: 200px;
+   background-color:white;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.b3{
+    height: 100px;
+    width: 420px;
+   background-color:white;
+   grid-column-start: 3;
+   grid-column-end:5;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.b4{
+    height: 100px;
+    width: 200px;
+   background-color:white;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+
+}
+.b5{
+  
+   height: 220px;
+   width: 200px;
+   background-color:white;
+   grid-row: span 2;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+
+}
+.b6{
+    
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100px;
+    width: 200px;
+   background-color:white;
+
+}
+.b7{
+    height: 100px;
+    width: 200px;
+   background-color:white;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.b8{
+    height: 220px;
+   width: 200px;
+   background-color:white;
+   grid-row: span 2;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.b9{
+    height: 100px;
+    width: 200px;
+   background-color:white;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.b10{
+    height: 100px;
+    width: 200px;
+   background-color:white;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.b11{
+    height: 100px;
+    width: 420px;
+   background-color:white;
+   grid-column:span 2;
+   display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+    .p {
+        color: white;
+       
+        
+       margin-left:320px ;
+        grid-column: span 4; /* Spans all 4 columns */
+        margin-bottom: 10px; /* Adds space between header and grid items */
+    }
+
+       
+
+
+       
+    </style>
+</head>
+<body>
+    <P class="p">CSS GRID examples</P>
+    <div class="canh">
+    <div class="can">
+        
+        
+        <div class="b1">
+            <p>Masonry 1</p>
+        </div>
+        <div class="b2">
+            <p>responsive</p>
+        </div>
+        <div class="b3">
+            <p>overlap</p>
+        </div>
+        <div class="b4">
+            <p>fluid</p>
+        </div>
+        <div class="b5">
+            <p>Explicitly placed</p>
+        </div>
+        <div class="b6">
+            <p>Negative Space</p>
+        </div>
+        <div class="b7">
+            <P>Flexible Breath</P>
+        </div>
+        <div class="b8">
+            <p>Masonry 2</p>
+        </div>
+        <div class="b9">
+            <p>Masonry 3</p>
+        </div>
+        <div class="b10">
+            <p>DOM Order</p>
+        </div>
+        <div class="b11">
+            <p>Named Tracks</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
